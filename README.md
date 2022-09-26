@@ -1,6 +1,7 @@
-# Restaurant Rating Prediction
+<h1> Restaurant Rating Prediction </h1> <br>
+This project for the iNeuron Internship
+<br><br><br>
 
-Internship Project 
 
 ## Problem Statement
 
