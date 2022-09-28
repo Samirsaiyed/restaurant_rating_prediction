@@ -71,7 +71,7 @@ h1,h3{
 }
 
 .navbar .nav-items{
-    padding-right: 50px;
+    padding-right: 110px;
     width: 20%;
     display: flex;
     justify-content: space-around;
@@ -209,7 +209,7 @@ form{
 }
 
 .card .left-side{
-    width: 40%;
+    width: 60%;
     height: 300px;
     background-image: url('../images/IMG_0001.jpg');
     background-size: cover;
@@ -226,7 +226,7 @@ form{
     font-size: 3rem;
 }
 .right-side p{
-    width: 60%;
+    width: 50%;
 }
 
 .social-links{
