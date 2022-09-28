@@ -1,5 +1,5 @@
 <h1> Restaurant Rating Prediction </h1> <br>
-This project for the iNeuron Internship
+<h3>This project for the iNeuron Internship<h3>
 <br><br><br>
 
 <img src="image_form.png">
