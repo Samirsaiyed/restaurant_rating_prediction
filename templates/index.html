@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data</title>
+    <link rel="stylesheet" href="../static/assets/styles/style.css">
+    <script src="../static/js/script.js" defer></script>
+</head>
+<body onload="addOptions()">
+    <div class="container">
+        <nav class="navbar">
+            <h4 class="brand-logo">Samir</h4>
+            <ul class="nav-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#form">Predictor</a></li>
+                <li><a href="#about">About me</a></li>
+            </ul>
+        </nav>
+         <section class="hero" id="home">
+            <h1>Restaurant Rating Prediction</h1>
+            <a class="goBtn" href="#form">
+                <button>Click me to Predict</button>
+            </a>
+         </section>   
+         <section class="form-wrapper" id="form">
+            <div class="form-head">
+                <h1 class="heading">Wellcome to Rating Predictor</h1>
+                <p class="heading-md">
+                    Enter the details and get the Rating (:
+                </p>
+            </div>
+            <form method="POST">
+                <div class="form-group">
+                    <label>Restaurant type</label>
+                    <select class="form-item" id="RT" name="rest_type">
+                        <option>select here</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Cuisines</label>
+                    <select class="form-item" id="C" name="cuisines">
+                        <option>select here</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Online order facility</label>
+                    <select name="online_order" id="OO" required>
+                        <option>-Select-</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label>Book table facility</label>
+                    <select name="book_table" id="BT" required>
+                        <option>-Select-</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label>Location</label>
+                    <select name="location" class="form-item" id="L">
+                        <option>select here</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Cost for people</label>
+                    <input  type="number" name="approx_cost" id="approx_cost" class="form-item" min="300" placeholder="- Enter Cost -" required />
+                </div>
+                <div class="form-group">
+                    <label>No. of votes</label>
+                    <input type="number" name="votes" id="votes" class="form-item" />
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="submit"  onclick="() => {
+                        alert('ok')
+                        window.location.href = '/#form'
+                    }">Submit</button>
+                    <button type="reset" class="reset">Cancel</button>
+                </div>
+            </form>
+
+            <!-- PREDICTOR -->
+            <div class="pred">
+                <h3>Result</h3>
+                <p id="pred-text">Expected Rating</p>
+                <hr id="hr2">
+                <p id="rating">
+                    <span id="stars"></span>
+                    <span id="finalOutput">{{prediction_text}}</span>
+                </p>
+
+            </div>
+         </section>
+
+         <section id="about">
+                <div class="card">
+                    <div class="left-side">
+
+                    </div>
+                    <div class="right-side">
+                        <h1>About me</h1>
+                        <p>
+                            Samir is Passionate about Data Science fields. He has Extensive knowledge in various Programming languages. He had Graduated in BCA. 
+                        </p>
+                        <div class="social-links">
+                            <a target="_blank" href="https://www.linkedin.com/in/samir-saiyed-119a0724b"> 
+                                <svg  width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+         </section>
+    </div>
+    <footer>
+          <div>
+            <p>Devloped by samir. Year 2022.</p>
+          </div>  
+    </footer>
+</body>
+</html>
